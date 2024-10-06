@@ -1,7 +1,9 @@
+package src.arraytutorial;
+
 public class MergeSortedArray {
     public static void main(String[] args) {
-        int[] a = {0,3,4,31};
-        int[] b = {4,6,30};
+        int[] a = {1,3};
+        int[] b = {2};
         mergeSortedArray(a,b);
     }
     private static void mergeSortedArray(int[] a, int[] b) {
@@ -32,6 +34,18 @@ public class MergeSortedArray {
         for(int l=0;l<=c.length-1;l++){
             System.out.println(c[l]);
         }
+        int x=c.length;
+        double d=0.00;
+        if((x)%2 ==0 ){
+            int h= c[(x/2)-1]+c[(x/2)];
+            d= (double) h/2;
+        }else{
+            d= c[((x+1)/2)-1];
+
+        }
+
+        System.out.println(d);
+
     }
 
 }
